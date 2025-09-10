@@ -14,15 +14,6 @@ public:
         tail = nullptr;
     }
 
-    ~DoubleList() {
-        Node<T>* current = head;
-        while (current != nullptr) {
-            Node<T>* temp = current;
-            current = current->getNext();
-            delete temp;
-        }
-    }
-
     bool isEmpty() {
         return head == nullptr;
     }
