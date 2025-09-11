@@ -2,6 +2,8 @@
 #include "DoubleList.h"
 #include "Node.h"
 
+using namespace std;
+
 int main() {
     // Lista de enteros
     DoubleList<int> listInt;
@@ -10,25 +12,25 @@ int main() {
     listInt.insertBack(20);
     listInt.insertBack(30);
 
-    std::cout << "Lista de enteros hacia adelante: ";
+    cout << "Lista de enteros hacia adelante: ";
     listInt.showForward();
 
-    std::cout << "Lista de enteros hacia atras: ";
+    cout << "Lista de enteros hacia atras: ";
     listInt.showBackward();
 
     listInt.remove(20);
-    std::cout << "Lista de enteros despues de eliminar 20: ";
+    cout << "Lista de enteros despues de eliminar 20: ";
     listInt.showForward();
 
     // Lista de strings
-    DoubleList<std::string> listStr;
+    DoubleList<string> listStr;
     listStr.insertBack("Juan");
     listStr.insertBack("Ana");
     listStr.insertFront("Luis");
-    std::cout << "\nLista de strings hacia adelante: ";
+    cout << "\nLista de strings hacia adelante: ";
     listStr.showForward();
 
-    std::cout << "Lista de strings hacia atras: ";
+    cout << "Lista de strings hacia atras: ";
     listStr.showBackward();
 
     return 0;
